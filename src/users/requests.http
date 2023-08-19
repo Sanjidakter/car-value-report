@@ -2,14 +2,25 @@
 Get http://localhost:3000/auth/4
 
 ### Create a new user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "12345"
+}
+### signin in as an existing user
 POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email": "test@auth.com",
-  "password": "1234test"
+  "email": "test@test.com",
+  "password": "12345"
 }
 
+###Get the currently signin user
+
+GET http://localhost:3000/auth/whoami
 
 ###find all users using a given email
 
@@ -29,3 +40,11 @@ content-type: application/json
 {
   "email": "aaaa@aaa.com"
 }
+
+### Set a color
+
+# GET http://localhost:3000/auth/colors/hehe
+
+# ### Get the color
+# GET http://localhost:3000/auth/colors
+
