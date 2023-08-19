@@ -2,18 +2,18 @@
 Get http://localhost:3000/auth/4
 
 ### Create a new user
-POST http://localhost:3000/auth/signup
+POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email": "unique@asdf2.com",
-  "password": "asdlfkajsd"
+  "email": "test@auth.com",
+  "password": "1234test"
 }
 
 
 ###find all users using a given email
 
-GET http://localhost:3000/auth/email=asdf@asdf.com
+GET http://localhost:3000/auth?email=asdf@asdf2.com
 
 ###Delete a users given id
 
