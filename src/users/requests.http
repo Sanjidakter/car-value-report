@@ -22,6 +22,11 @@ content-type: application/json
 
 GET http://localhost:3000/auth/whoami
 
+###Signout
+
+POST http://localhost:3000/auth/signout
+
+
 ###find all users using a given email
 
 GET http://localhost:3000/auth?email=asdf@asdf2.com
